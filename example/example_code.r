@@ -2,9 +2,10 @@
 # This example data is from 10x pbmc dataset. Samples are randomly selected from each cell type. And groups are randomly assigned to each sample to make the illustration.
 
 library(iTALK)
+library(dplyr)
 
 # read the data
-data<-read.table('example_data.txt',sep='\t',header=T,stringsAsFactors = F)
+data<-read.table('./example_data.txt',sep='\t',header=T,stringsAsFactors = F)
 
 ## highly expressed ligand-receptor pairs
 
